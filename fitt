@@ -1,0 +1,6 @@
+class PrintLossCallback:
+    def __init__(self):
+        self.epoch = 0
+    
+    def __call__(self, score, epoch, steps):
+        print(f"Epoch: {epoch}, Loss: {score:.4f}")
